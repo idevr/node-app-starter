@@ -1,0 +1,25 @@
+{
+  "name": "node-app-starter",
+  "version": "0.0.0",
+  "description": "Node.js Web Application Starter",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "version:major": "npm version major --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:patch": "npm version patch --no-git-tag-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rapidevelop/node-app-starter.git"
+  },
+  "keywords": [],
+  "author": "Iman Vafadarnezhad",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/rapidevelop/node-app-starter/issues"
+  },
+  "homepage": "https://github.com/rapidevelop/node-app-starter#readme"
+}
