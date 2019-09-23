@@ -1,5 +1,7 @@
 # Node.js Web Application Starter
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 ## Usage
 
 Clone the repository and install the dependencies.
@@ -14,4 +16,10 @@ Bumps the package version.
 
 ```
 npm run version:[major|minor|patch]
+```
+
+Commits changes using commitizen.
+
+```
+npm run git:commit
 ```
