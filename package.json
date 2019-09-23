@@ -9,7 +9,10 @@
     "version:major": "npm version major --no-git-tag-version",
     "version:minor": "npm version minor --no-git-tag-version",
     "version:patch": "npm version patch --no-git-tag-version",
-    "git:commit": "git-cz"
+    "git:commit": "git-cz",
+    "test:type": "tsc --noEmit",
+    "test:type:watch": "npm run test:type -- --watch",
+    "build": "babel ./src --out-dir ./dist --extensions \".ts,.tsx\" --source-maps inline"
   },
   "repository": {
     "type": "git",
@@ -29,9 +32,18 @@
     }
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.6.0",
     "@rapidevelop/prettier-config": "^1.0.0",
+    "@types/node": "^12.7.5",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
   }
 }
